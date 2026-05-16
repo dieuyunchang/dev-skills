@@ -49,6 +49,11 @@ cp -r skills/* ~/.gemini/antigravity/skills/
 - **Focus**: System architecture design using text/ASCII.
 - **Capabilities**: Generating diagrams, writing technical docs, and building Git-friendly knowledge bases.
 
+### 🛡️ Security & Compliance
+#### [project-security-audit](file:///Users/yunchang/Workspace/dev-skills/skills/project-security-audit)
+- **Focus**: Malware detection, credential theft prevention, and repository auditing.
+- **Capabilities**: Deeply scanning untrusted repos for exfiltration logic, backdoors, and supply-chain attacks.
+
 ### 🔍 Code Quality & Review
 (Add more skills here as they are added to the repo)
 
