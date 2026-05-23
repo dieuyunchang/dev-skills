@@ -59,3 +59,30 @@ A final verdict is mandatory:
 - Never assume generated code is safe.
 - Be extremely strict; catch too many issues rather than missing one.
 - Consider long-term maintenance, production failures, scale, and abuse scenarios.
+
+---
+
+## Documentation Output Requirement (Mandatory)
+
+After every skill run, always generate a markdown document.
+
+Default output path:
+
+```txt
+.documentation/
+└── <current-branch-name>/
+    └── [DeepBranchCodeReview]<document-file-name-renegated>-<timestamp>.md
+```
+
+Rules:
+- Must generate documentation after every run.
+- Must use repository-root `/.documentation` as default base folder.
+- Must separate files by current branch name.
+- Must include renegated document file name plus timestamp in file name.
+- Must use `.md` extension.
+
+Timestamp format:
+
+```txt
+YYYY-MM-DD_HH-mm-ss
+```

@@ -175,3 +175,30 @@ Always produce a single self-contained `.html` file with:
 - No JavaScript required (pure CSS animations)
 
 The file should render correctly when opened directly in any modern browser. The export toolbar uses two CDN scripts (html2canvas and jsPDF) — no other JavaScript dependencies.
+
+---
+
+## Documentation Output Requirement (Mandatory)
+
+After every skill run, always generate a markdown document.
+
+Default output path:
+
+```txt
+.documentation/
+└── <current-branch-name>/
+    └── [ArchitectureDiagram]<document-file-name-renegated>-<timestamp>.md
+```
+
+Rules:
+- Must generate documentation after every run.
+- Must use repository-root `/.documentation` as default base folder.
+- Must separate files by current branch name.
+- Must include renegated document file name plus timestamp in file name.
+- Must use `.md` extension.
+
+Timestamp format:
+
+```txt
+YYYY-MM-DD_HH-mm-ss
+```

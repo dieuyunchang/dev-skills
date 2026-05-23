@@ -445,7 +445,7 @@ Format:
 
 ```txt
 .documentation/
-└── generated/
+└── deep-code-knowledge-extraction/
     └── <branch-name>/
         └── <timestamp>/
             ├── SUMMARY.md

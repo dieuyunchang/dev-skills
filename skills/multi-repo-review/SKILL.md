@@ -72,3 +72,30 @@ Use the structured template defined in [reporting-template.md](references/report
 - Think like a production incident investigator.
 - Consider rollback failures and distributed system edge cases.
 - Prioritize: correctness, safety, maintainability, scalability, and operational reliability.
+
+---
+
+## Documentation Output Requirement (Mandatory)
+
+After every skill run, always generate a markdown document.
+
+Default output path:
+
+```txt
+.documentation/
+└── <current-branch-name>/
+    └── [MultiRepoReview]<document-file-name-renegated>-<timestamp>.md
+```
+
+Rules:
+- Must generate documentation after every run.
+- Must use repository-root `/.documentation` as default base folder.
+- Must separate files by current branch name.
+- Must include renegated document file name plus timestamp in file name.
+- Must use `.md` extension.
+
+Timestamp format:
+
+```txt
+YYYY-MM-DD_HH-mm-ss
+```
